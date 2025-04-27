@@ -6,6 +6,15 @@ import java.util.Arrays;
 public class LongestCommonPrefix {
 
     public String lcp(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            throw new IllegalArgumentException("Input array must not be null or empty");
+        }
+
+        for (String s : strs) {
+            if (s == null || s.length() == 0) {
+                throw new IllegalArgumentException("Strings inside array must not be null or empty");
+            }
+        }
 
         if (strs.length == 1) {
             return strs[0];
