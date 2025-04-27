@@ -5,6 +5,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ExcelSheet/pom.xml" />
+        <option value="$PROJECT_DIR$/RomanToInteger/pom.xml" />
+        <option value="$PROJECT_DIR$/ArrayRotator/pom.xml" />
+        <option value="$PROJECT_DIR$/BinaryTreeMaxPath/pom.xml" />
+        <option value="$PROJECT_DIR$/BitwiseSumCalculator/pom.xml" />
+        <option value="$PROJECT_DIR$/ClimbingStairs/pom.xml" />
+        <option value="$PROJECT_DIR$/CourseSchedule/pom.xml" />
+        <option value="$PROJECT_DIR$/LCP/pom.xml" />
+        <option value="$PROJECT_DIR$/RepetitiveCharFinder/pom.xml" />
+        <option value="$PROJECT_DIR$/SortedArray2BST/pom.xml" />
+        <option value="$PROJECT_DIR$/TwoSum/pom.xml" />
+        <option value="$PROJECT_DIR$/ZerosToEnd/pom.xml" />
       </list>
     </option>
   </component>

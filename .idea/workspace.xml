@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="684276c9-6058-4af4-9c14-c208178b6d0e" name="Changes" comment="" />
+    <list default="true" id="684276c9-6058-4af4-9c14-c208178b6d0e" name="Changes" comment="Correct artifact id for sorted array 2 bst">
+      <change afterPath="$PROJECT_DIR$/ZerosToEnd/solution_ZerosToEnd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RomanToInteger/src/test/java/zest/RomanToIntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RomanToInteger/src/test/java/zest/RomanToIntegerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortedArray2BST/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SortedArray2BST/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortedArray2BST/solution_SortedArray2BST.md" beforeDir="false" afterPath="$PROJECT_DIR$/SortedArray2BST/solution_SortedArray2BST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortedArray2BST/src/main/java/zest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SortedArray2BST/src/main/java/zest/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortedArray2BST/src/main/java/zest/SortedArray2BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/SortedArray2BST/src/main/java/zest/SortedArray2BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortedArray2BST/src/test/java/zest/SortedArray2BSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SortedArray2BST/src/test/java/zest/SortedArray2BSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoSum/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TwoSum/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoSum/src/main/java/zest/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/TwoSum/src/main/java/zest/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoSum/src/test/java/zest/TwoSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TwoSum/src/test/java/zest/TwoSumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZerosToEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ZerosToEnd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZerosToEnd/src/main/java/zest/ZerosToEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZerosToEnd/src/main/java/zest/ZerosToEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZerosToEnd/src/test/java/zest/ ZerosToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZerosToEnd/src/test/java/zest/ ZerosToEndTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +53,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RomanToIntegerTest.executor": "Run",
+    "JUnit.RomanToIntegerTest.validRomanNumber.executor": "Run",
+    "JUnit.SortedArray2BSTTest.executor": "Run",
+    "JUnit.SortedArray2BSTTest.testTreeStructure.executor": "Run",
+    "JUnit.SortedArray2BSTTest.test_EmptySortedArray.executor": "Run",
+    "JUnit.SortedArray2BSTTest.test_EvenSortedArray.executor": "Run",
+    "JUnit.SortedArray2BSTTest.test_NegativeSortedArray.executor": "Run",
+    "JUnit.SortedArray2BSTTest.test_NullSortedArray.executor": "Run",
+    "JUnit.SortedArray2BSTTest.test_OddSortedArray.executor": "Run",
+    "JUnit.TwoSumTest.OneSolutionTwoSum.executor": "Run",
+    "JUnit.TwoSumTest.OnlySolutionTwoSum.executor": "Run",
+    "JUnit.TwoSumTest.RepeatTwoSum.executor": "Run",
+    "JUnit.TwoSumTest.SameNumbersToSum.executor": "Debug",
+    "JUnit.TwoSumTest.executor": "Run",
+    "JUnit.TwoSumTest.numberWillOnlyUseOnce.executor": "Run",
+    "JUnit.TwoSumTest.sumMustEqualTarget.executor": "Run",
+    "JUnit.TwoSumTest.validateSolution.executor": "Run",
+    "JUnit.ZerosToEndTest.executor": "Run",
+    "JUnit.ZerosToEndTest.testArrayWithinConstraints.executor": "Run",
+    "JUnit.ZerosToEndTest.testEmptyArray.executor": "Run",
+    "JUnit.ZerosToEndTest.testNullArray.executor": "Run",
+    "JUnit.ZerosToEndTest.testOverLimitArray.executor": "Run",
+    "JUnit.ZerosToEndTest.testValidArrayLength10.executor": "Run",
+    "Maven.RomanToInteger [clean].executor": "Run",
+    "Maven.RomanToInteger [install].executor": "Run",
+    "Maven.TwoSum [clean].executor": "Run",
+    "Maven.TwoSum [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/zhongxin/Desktop/2/Testing/assignment02",
+    "last_opened_file_path": "/Users/zhongxin/Desktop/2/Testing/assignment02/TwoSum",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +93,104 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TwoSum" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ZerosToEnd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SortedArray2BSTTest.testTreeStructure">
+    <configuration name="SortedArray2BSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanToInteger (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zest" />
+      <option name="MAIN_CLASS_NAME" value="zest.SortedArray2BSTTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedArray2BSTTest.testTreeStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanToInteger (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zest" />
+      <option name="MAIN_CLASS_NAME" value="zest.SortedArray2BSTTest" />
+      <option name="METHOD_NAME" value="testTreeStructure(int[])" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedArray2BSTTest.test_EvenSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanToInteger (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zest" />
+      <option name="MAIN_CLASS_NAME" value="zest.SortedArray2BSTTest" />
+      <option name="METHOD_NAME" value="test_EvenSortedArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedArray2BSTTest.test_NullSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanToInteger (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zest" />
+      <option name="MAIN_CLASS_NAME" value="zest.SortedArray2BSTTest" />
+      <option name="METHOD_NAME" value="test_NullSortedArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedArray2BSTTest.test_OddSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanToInteger (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zest" />
+      <option name="MAIN_CLASS_NAME" value="zest.SortedArray2BSTTest" />
+      <option name="METHOD_NAME" value="test_OddSortedArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SortedArray2BSTTest.testTreeStructure" />
+        <item itemvalue="JUnit.SortedArray2BSTTest" />
+        <item itemvalue="JUnit.SortedArray2BSTTest.test_EvenSortedArray" />
+        <item itemvalue="JUnit.SortedArray2BSTTest.test_OddSortedArray" />
+        <item itemvalue="JUnit.SortedArray2BSTTest.test_NullSortedArray" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,10 +209,35 @@
       <updated>1745530233763</updated>
       <workItem from="1745530235751" duration="503000" />
       <workItem from="1745530748494" duration="30000" />
+      <workItem from="1745530790690" duration="41208000" />
     </task>
+    <task id="LOCAL-00001" summary="Correct artifact id for sorted array 2 bst">
+      <option name="closed" value="true" />
+      <created>1745531037732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745531037732</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correct artifact id for sorted array 2 bst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct artifact id for sorted array 2 bst" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TwoSum/src/main/java/zest/TwoSum.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

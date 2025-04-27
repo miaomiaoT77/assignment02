@@ -3,7 +3,6 @@ package zest;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import net.jqwik.api.*;
-import net.jqwik.api.arbitraries.*;
 
 class RomanToIntegerTest {
     //Jacoco-line coverage
@@ -100,14 +99,14 @@ class RomanToIntegerTest {
 
 
     @Property
-    void validRomanNumber(@ForAll("RomanNumbers") String roman) {
+    void validRomanNumber(@ForAll("romanNumbers") String roman) {
         RomanToInteger romanToInteger = new RomanToInteger();
         int result = romanToInteger.romanToInt(roman);
         assertTrue(result >= 1 && result <= 3999);
     }
 
     @Provide
-    Arbitrary<String> RomanNumbers() {
+    Arbitrary<String> romanNumbers() {
         return Arbitraries.strings()
                 .withChars('I', 'V', 'X', 'L', 'C', 'D', 'M')
                 .ofMinLength(1).ofMaxLength(15)

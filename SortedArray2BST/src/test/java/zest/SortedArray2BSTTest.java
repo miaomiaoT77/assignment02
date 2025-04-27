@@ -19,13 +19,15 @@ public class SortedArray2BSTTest {
         List<Integer> actual = converter.levelOrder(root);
         assertEquals(expected, actual);
     }
+
     @Test
     void test_EvenSortedArray() {
-        List<Integer> expected = Arrays.asList(3,null,7);
-        TreeNode root = converter.sortedArrayToBST(new int[]{3,7});
+        List<Integer> expected = Arrays.asList(3, null, 7);
+        TreeNode root = converter.sortedArrayToBST(new int[]{3, 7});
         List<Integer> actual = converter.levelOrder(root);
         assertEquals(expected, actual);
     }
+
     @Test
     void test_SingleSortedArray() {
         List<Integer> expected = Arrays.asList(1);
@@ -43,21 +45,28 @@ public class SortedArray2BSTTest {
     @Test
     void test_NegativeSortedArray() {
         List<Integer> expected = Arrays.asList(-3, -17, -2, null, -10, null, -1);
-        TreeNode root = converter.sortedArrayToBST(new int[]{-17,-10,-3,-2,-1});
+        TreeNode root = converter.sortedArrayToBST(new int[]{-17, -10, -3, -2, -1});
         List<Integer> actual = converter.levelOrder(root);
         assertEquals(expected, actual);
     }
-    @Test
+
+
+
     // added missing branches tests
+    @Test
     void test_EmptySortedArray() {
-        TreeNode root = converter.sortedArrayToBST(new int[]{});
-        assertNull(root);
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+                () -> converter.sortedArrayToBST(new int[]{}));
+        assertEquals("Input array cannot be empty", thrown.getMessage());
     }
+
     @Test
     void test_NullSortedArray() {
-        TreeNode root = converter.sortedArrayToBST(null);
-        assertNull(root);
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+                () -> converter.sortedArrayToBST(null));
+        assertEquals("Input array cannot be null", thrown.getMessage());
     }
+
     @Test
     void test_LevelNullSortedArray() {
         List<Integer> result = converter.levelOrder(null);
@@ -81,6 +90,71 @@ public class SortedArray2BSTTest {
         List<Integer> actual = converter.levelOrder(root);
         assertEquals(expected, actual);
 
+    }
+
+    @Test
+    void test_NullArray() {
+        int[] nums = null;
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+                () -> converter.sortedArrayToBST(nums));
+        assertEquals("Input array cannot be null", thrown.getMessage());
+    }
+
+    @Test
+    void test_EmptyArray() {
+        int[] nums = {};
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+                () -> converter.sortedArrayToBST(nums));
+        assertEquals("Input array cannot be empty", thrown.getMessage());
+    }
+
+    @Test
+    void test_UnorderedArray() {
+        int[] nums = {1, 3, 2}; // Not strictly increasing
+        IllegalStateException thrown = assertThrows(IllegalStateException.class,
+                () -> converter.sortedArrayToBST(nums));
+        assertEquals("Input array must be strictly increasing", thrown.getMessage());
+    }
+    @Property
+    boolean testTreeStructure(@ForAll("sortedArrays") int[] input) {
+        TreeNode root = converter.sortedArrayToBST(input);
+
+        // Verify height-balanced property
+        return isHeightBalanced(root);
+    }
+    @Provide
+    Arbitrary<int[]> sortedArrays() {
+        return Arbitraries.integers()
+                .between(-100, 100)
+                .array(int[].class)
+                .ofMinSize(1)
+                .ofMaxSize(10)
+                .filter(arr -> isStrictlyIncreasing(arr));
+    }
+
+    private boolean isHeightBalanced(TreeNode node) {
+        return checkHeight(node) != -1;
+    }
+
+    private int checkHeight(TreeNode node) {
+        if (node == null) {
+            return 0;
+        }
+        int leftHeight = checkHeight(node.left);
+        int rightHeight = checkHeight(node.right);
+        if (leftHeight == -1 || rightHeight == -1 || Math.abs(leftHeight - rightHeight) > 1) {
+            return -1;
+        }
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    private boolean isStrictlyIncreasing(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] >= nums[i + 1]) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 
