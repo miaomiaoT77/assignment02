@@ -5,7 +5,7 @@ public class Main {
         ExcelSheet converter = new ExcelSheet();
         
         // Test examples
-        String[] columnTitles = {"A", "AB", "ZY"};
+        String[] columnTitles = {"A", "AB", "ZZ"};
         for (String title : columnTitles) {
             int columnNumber = converter.titleToNumber(title);
             System.out.println("Column Title: " + title + " -> Column Number: " + columnNumber);
