@@ -16,6 +16,10 @@ public class RepetitiveCharFinder {
         Map<Character, Integer> characterCounts = new LinkedHashMap<>(); // Preserves insertion order
         List<Character> nonUniqueCharacters = new ArrayList<>();
 
+        if (input == null) {
+            throw new IllegalArgumentException("Input string must not be null.");
+        }
+
         for (char c : input.toCharArray()) {
             characterCounts.put(c, characterCounts.getOrDefault(c, 0) + 1);
         }
