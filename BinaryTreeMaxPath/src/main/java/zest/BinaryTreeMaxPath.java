@@ -12,6 +12,9 @@ public class BinaryTreeMaxPath {
         }
 
         public static TreeNode constructTree(Integer[] array) {
+            // added: checks for empty array
+            if (array == null) return null;
+            if (array.length == 0) return null;
             TreeNode[] nodes = new TreeNode[array.length];
             for (int i = 0; i < array.length; i++) {
                 if (array[i] != null) {
@@ -32,9 +35,8 @@ public class BinaryTreeMaxPath {
     private int maxPathSum;
 
     public int maxPathSum(TreeNode root) {
-        if (root == null) {
-            throw new IllegalArgumentException("The tree root must not be null.");
-        }
+        // changed this to ensure that it returns 0 because of empty array
+        if (root == null) return 0;
         maxPathSum = Integer.MIN_VALUE;
         maxGain(root);
         return maxPathSum;

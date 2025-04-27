@@ -7,6 +7,20 @@ public class ArrayRotator {
 
     public static int[] rotate(int[] originalArray, int rotationCount) {
 
+        // Pre-conditions:
+            // Check for null or empty array
+        if (originalArray == null) {
+            throw new IllegalArgumentException("Input array must not be null");
+        }
+        if (originalArray.length == 0) {
+            throw new IllegalArgumentException("Input array must not be empty");
+        }
+
+            // Check for negative rotation count
+        if (rotationCount < 0) {
+            throw new IllegalArgumentException("Rotation count must be non-negative");
+        }
+
         int arrayLength = originalArray.length;
         int[] rotatedArray = new int[arrayLength];
 
