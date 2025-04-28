@@ -6,7 +6,7 @@ Based on structural testing, we wrote line coverage, branch coverage, path cover
 
 Result: 
 
-![jacoco_images.png](images/jacoco_images.png)
+![jacoco_images.png](TwoSum/images/jacoco_images.png)
 
 # Task 2 Designing Contracts
 ### pre-condition
@@ -88,7 +88,7 @@ void SingleInputTwoSum() {
 
 ```
 all the added test passed
-![passedconditions.png](images/passedconditions.png)
+![passedconditions.png](TwoSum/images/passedconditions.png)
 
 # Task 4 Property-Based Testing
 
@@ -116,4 +116,4 @@ boolean validateSolution(@ForAll List<Integer> nums, @ForAll int target) {
 ```
 
 result:
-![PBT.png](images/PBT.png)
+![PBT.png](TwoSum/images/PBT.png)
