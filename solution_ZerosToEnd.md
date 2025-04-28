@@ -1,4 +1,4 @@
-## Problem: ToSum
+## Problem: ZerosToEnd
 
 # Task 1 Code Coverage
 

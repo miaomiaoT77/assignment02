@@ -1,4 +1,4 @@
-## Problem: ToSum
+## Problem: TwoSum
 
 # Task 1 Code Coverage
 
