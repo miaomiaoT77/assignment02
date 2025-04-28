@@ -5,7 +5,7 @@
 Based on structural testing, we wrote line coverage, branch coverage, path coverage.
 
 Result:
-![Zeros_jacoco.png](images/Zeros_jacoco.png)
+![Zeros_jacoco.png](ZerosToEnd/images/Zeros_jacoco.png)
 
 
 # Task 2 Designing Contracts
@@ -67,7 +67,7 @@ void testResultArrayLengthMatchesInput() {
 
 ```
 all the added test passed
-![allpassedtests.png](images/allpassedtests.png)
+![allpassedtests.png](ZerosToEnd/images/allpassedtests.png)
 
 # Task 4 Property-Based Testing
 
@@ -87,4 +87,4 @@ Arbitrary<int[]> validArrays() {
 ```
 
 result:
-![PBT.png](images/PBT.png)
+![PBT.png](ZerosToEnd/images/PBT.png)
