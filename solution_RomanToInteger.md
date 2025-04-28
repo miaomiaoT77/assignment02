@@ -5,7 +5,7 @@
 Based on structural testing, we wrote line coverage, branch coverage, path coverage.
 
 Result: 100% coverage
-![jacoco.png](images/jacoco.png)
+![jacoco.png](RomanToInteger/images/jacoco.png)
 
 # Task 2 Designing Contracts
 ### pre-condition
@@ -77,7 +77,7 @@ as we can see
 
 ```
 all the added test passed except postinvalidnumbers()
-![post_error.png](images/post_error.png)
+![post_error.png](RomanToInteger/images/post_error.png)
 
 it says nothing was thrown, when input roman number is "IIIIII"
 Missing post-condition check for Roman numeral format validity. In this case, 
@@ -109,7 +109,7 @@ So I also added the corresponding test, as shown below.
     }
 ```
 Eventually, all the tests passed.
-![passedtest.png](images/passedtest.png)
+![passedtest.png](RomanToInteger/images/passedtest.png)
 # Task 4 Property-Based Testing
 based on the PBT, I wrote test code
 - Use regular expression filtering to ensure the generated string is a valid Roman numeral
@@ -132,4 +132,4 @@ based on the PBT, I wrote test code
 ```
 
 result:
-![PBT.png](images/PBT.png)
+![PBT.png](RomanToInteger/images/PBT.png)
